@@ -1,4 +1,4 @@
-public class FisierMp3 {
+public class FisierMp3 implements Element{
 
     String nume;
 
@@ -13,11 +13,12 @@ public class FisierMp3 {
 
     public void print(){
 
-        //  if(alignStrategy==null) {
-        System.out.println("FisierMp3: "+this.nume);
-        //  }else{
-        //       alignStrategy.render(this.nume);
-    }
-    // }
 
+        System.out.println("FisierMp3: "+this.nume);
+
+    }
+
+    public void accept(Visitor visitor){
+        visitor.visit(this);
+    }
 }

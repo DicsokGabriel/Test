@@ -21,7 +21,9 @@ public class FisierTxt implements Element{
     public void setAlignStrategy(AlignStrategy alignStrategy){
         this.alignStrategy=alignStrategy;
     }
-
+    public void accept(Visitor visitor){
+        visitor.visit(this);
+    }
 }
 
 

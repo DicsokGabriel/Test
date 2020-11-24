@@ -1,4 +1,4 @@
-public class FisierSvg {
+public class FisierSvg implements Element{
 
     String nume;
 
@@ -10,11 +10,13 @@ public class FisierSvg {
 
     public void print(){
 
-        //  if(alignStrategy==null) {
+
         System.out.println("FisierSvg: "+this.nume);
-        //  }else{
-        //       alignStrategy.render(this.nume);
+
     }
-    // }
+
+    public void accept(Visitor visitor){
+        visitor.visit(this);
+    }
 
 }

@@ -14,9 +14,23 @@ public class Main {
         d.AddElement(fis2);
         d.AddElement(fis3);
 
-
-
-
+        d.AddElement(new FisierSvg("Svg File"));
+        d.AddElement(new FisierMp3("Mp3File"));
+        d.AddElement(new FisierTxt("TxtFile without align"));
         d.print();
+        //d.printStatistics();
     }
 }
+
+
+/*Director: dir1
+Director: dirdin interor
+<<<<<fisier1>>>>>
+<<<<<<fisier2
+fisier3>>>>>>>
+FisierSvg: Svg File
+FisierMp3: Mp3File
+TxtFile without align
+
+Process finished with exit code 0
+*/

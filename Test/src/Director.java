@@ -19,5 +19,13 @@ public class Director implements Element{
         }
     }
 
+  /*  public void accept(Visitor v) {
+
+        v.visit(this);
+        for (Element i:elements){
+            i.accept(v);
+        }
+    }*/
+
 
 }
